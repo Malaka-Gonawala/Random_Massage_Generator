@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Random Message Generator</title>
+        <link rel="shortcut icon" href="img/RMG.png" type="image/x-icon" />
+        <style>
+            * {
+                font-family: "Courier New", Courier, monospace;
+            }
+            body {
+                width: 100vw;
+                height: 100vh;
+                overflow: hidden;
+                box-sizing: border-box;
+                background-color: #5c5c5c;
+            }
+            main {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -60%);
+                width: max-content;
+                height: max-content;
+                color: #e0dede;
+                padding: 20px 30px;
+            }
+            button {
+                padding: 10px 20px;
+                border: none;
+                background-color: #e0dede;
+                color: #000000;
+                font-weight: bold;
+                font-size: 15px;
+                border-radius: 25px;
+                cursor: pointer;
+                position: fixed;
+                left: 50%;
+                transform: translate(-70%);
+            }
+            button:hover {
+                background-color: #989898;
+                color: #000000;
+            }
+            h1 {
+                font-size: 30px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+            div {
+                background-color: #353535;
+                padding: 10px 20px;
+                margin: 10px 0;
+                line-height: 30px;
+            }
+            hr {
+                width: 100%;
+            }
+            #title {
+                font-size: 40px;
+                text-align: center;
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1 id="title">Random Message Generator</h1>
+            <h1>These are the messages that were generated</h1>
+            <div>
+                <h2 id="motivational-message"></h2>
+                <hr />
+                <h2 id="anime-quote"></h2>
+                <hr />
+                <h2 id="system-message"></h2>
+            </div>
+
+            <button id="refresh">Another</button>
+        </main>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
